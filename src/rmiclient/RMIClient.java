@@ -34,11 +34,15 @@ public class RMIClient {
             Scanner odczyt = new Scanner(System.in);
             System.out.println("Podaj ilosc: ");
             tmp2 = odczyt.nextLine();
+            boolean b = true;
+            
             try {
                 ilosc = Integer.parseInt(tmp2);
                 System.out.println(ilosc);
+                
             } catch (Exception e) {
-                System.out.println("Podać liczbę!!!");
+                System.out.println("Podano niepoprawne dane!!!");
+                
             }
             
             for (int i=0; i<ilosc; i++){
