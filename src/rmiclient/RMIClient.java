@@ -25,7 +25,7 @@ public class RMIClient {
    
     private void connectServer() {
         try {
-            Registry reg = LocateRegistry.getRegistry("192.168.1.101", 5099);
+            Registry reg = LocateRegistry.getRegistry("192.168.0.100", 5099);
             RMII rmi = (RMII) reg.lookup("server");
             System.out.println("Connected to server");
            
