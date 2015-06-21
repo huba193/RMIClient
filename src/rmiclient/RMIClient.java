@@ -34,7 +34,7 @@ public class RMIClient {
             Scanner odczyt = new Scanner(System.in);
             System.out.println("Podaj ilosc: ");
             tmp2 = odczyt.nextLine();
-            boolean b = true;
+           
             
             try {
                 ilosc = Integer.parseInt(tmp2);
@@ -51,9 +51,9 @@ public class RMIClient {
                 System.out.println("Podaj wysokość: ");  
                 tmp1 = odczyt.nextLine();
             }
-            
+            String p;
             System.out.println(rmi.obliczenia(rmi.zapisDanych(ilosc, tmp, tmp1)));
-           
+          
             
         } catch (Exception e) {
             System.out.println(e);
